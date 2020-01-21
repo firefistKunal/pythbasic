@@ -35,15 +35,16 @@ def quadraticEquation(a, b, c):
         ans.append((-b - cmath.sqrt(ans[0])/(2*a)))
     return ans
 
-def primenum(n):
-    c=0
-    for i in range(1,n):
-        if n%i==0:
-          c=c+1
-        
-    if c>1:
-        return "not a prime"
+def isPrime(n):
+    n=int(n)
+    if n<2:
+        return False
+    elif n>2:
+        for i in range(2,math.ceil(math.sqrt(n))+1):
+            if n%i==0:
+                return False
+        return True
     else:
-        return "prime"
-#print(primenum(6))
-#print(primenum(2))
+        return True
+
+
