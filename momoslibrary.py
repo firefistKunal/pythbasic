@@ -35,3 +35,15 @@ def quadraticEquation(a, b, c):
         ans.append((-b - cmath.sqrt(ans[0])/(2*a)))
     return ans
 
+def primenum(n):
+    c=0
+    for i in range(1,n):
+        if n%i==0:
+          c=c+1
+        
+    if c>1:
+        return "not a prime"
+    else:
+        return "prime"
+#print(primenum(6))
+#print(primenum(2))
