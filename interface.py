@@ -1,11 +1,22 @@
 import momoslibrary as momo # import the file that contains our functions, individual functions can also be imported
 
-# Code for the program to take neccessary  inputs from the user
-number = input("Enter an year\n")
+# Code for the program to take neccessary  inputs from the user     
 
-# The relevant function is then called passing the input
-if momo.OddEven(number): # the function "OddEven()"" is written as "momo.OddEven()" because its from "momoslibrary" which is imported as "momo"
-    print("Its leap year\n")
-else:
-    print("This aint no leap year.\n")
-#Based on the function response the neccessary output is given to the user
+a = input("enter a")   
+b = input("enter b")
+c = input("enter c")
+
+solution=momo.quadraticEquation(a,b,c)
+
+if solution[0]>0:
+    print("\nThe roots are fucking real and distinct.\nroot1 = {} \nroot2= {}".format(solution[1], solution[2]))
+
+elif solution[0]==0:
+    print("The roots are fucking real and equal\nroot={}".format(solution[1]))
+
+elif solution[0]<0:
+    print("The roots are fucking imaginary like all your friends you lonely nerd.\nroot1={} \nroot2={}".format(solution[1], solution[2]))
+
+
+
+
