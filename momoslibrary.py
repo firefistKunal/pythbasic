@@ -47,4 +47,29 @@ def isPrime(n):
     else:
         return True
 
+def lineEquation(x1, y1, x2, y2):
+    x1=int(x1)
+    y1=int(y1)
+    x2=int(x2)
+    y2=int(y2)
+
+    equation=[]
+    equation.append((y2-y1)/(x2-x1))
+    equation.append(y1-equation[0]*x1)
+    return equation
+
+def lineStdEquation(x1, y1, x2, y2):
+    x1=int(x1)
+    y1=int(y1)
+    x2=int(x2)
+    y2=int(y2)
+
+    equation = []
+
+    equation.append(y2-y1)
+    equation.append(x1-x2)
+    equation.append((x2-x1)*y1 - (y2-y1)*x1)
+
+    return equation
+
 

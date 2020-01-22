@@ -2,12 +2,16 @@ import momoslibrary as momo # import the file that contains our functions, indiv
 
 # Code for the program to take neccessary  inputs from the user
 
-number=input("enter a number to verify its primality.\n")
+x1=input("x1 ")
+y1=input("y1 ")
+x2=input("x2 ")
+y2=input("y2 ")
 
-if momo.isPrime(number):
-    print("its a prime number.\n")
+line = momo.lineEquation(x1, y1, x2, y2)
 
-else:
-    print("This ain't a prime number.\n")
+print(" y = {}x + {}\n".format(line[0], line[1]))
 
+std_line= momo.lineStdEquation(x1, y1, x2, y2)
+print ("\nStandard equation of line is")
+print(" {}x + {}y + {} = 0".format(std_line[0], std_line[1], std_line[2]))
 
