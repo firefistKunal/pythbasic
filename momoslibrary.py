@@ -72,12 +72,19 @@ def lineStdEquation(x1, y1, x2, y2):
 
     return equation
 
-def standardDeviation(dataset):
-    mean=sum(dataset)/len(dataset)
+def populationStdDeviation(datalist):
+    mean=sum(datalist)/len(datalist)
     variance=0
-    for data in dataset:
+    for data in datalist:
         variance=variance+(data-mean)**2
-    return (variance/len(dataset))**0.5
+    return (variance/len(datalist))**0.5
+
+def sampleStdDeviation(datalist):
+    mean=sum(datalist)/len(datalist)
+    variance=0                                   
+    for data in datalist:
+        variance=variance+(data-mean)**2
+    return (variance/(len(datalist)-1))**0.5
 
 
 
