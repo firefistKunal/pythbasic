@@ -72,4 +72,12 @@ def lineStdEquation(x1, y1, x2, y2):
 
     return equation
 
+def standardDeviation(dataset):
+    mean=sum(dataset)/len(dataset)
+    variance=0
+    for data in dataset:
+        variance=variance+(data-mean)**2
+    return (variance/len(dataset))**0.5
+
+
 
