@@ -2,9 +2,30 @@ import momoslibrary as momo # import the file that contains our functions, indiv
 
 # Code for the program to take neccessary  inputs from the user
 
-input_string = input("Enter the data numbers separated by space: ")
-data_string = list(map(int, input_string.split()))
-print ("Standard deviation of the given data set is {} ".format( momo.populationStdDeviation(data_string)))
+
+input_x = input("Enter the data numbers separated by space: ")
+data_x = list(map(int, input_x.split()))
+
+input_y = input("Enter the data numbers separated by space: ")
+data_y = list(map(int, input_y.split()))
+city1= momo.standardDeviation2D(data_x, data_y)
 
 
-print ("Sample Standard deviation of the given data set is {} ".format( momo.sampleStdDeviation(data_string)))
+input_x = input("Enter the data numbers separated by space: ")
+data_x = list(map(int, input_x.split()))
+input_y = input("Enter the data numbers separated by space: ")
+data_y = list(map(int, input_y.split()))
+
+city2= momo.standardDeviation2D(data_x, data_y)
+
+
+
+
+if city1>city2:
+    print("city 1 is more dispersed\n")
+else:
+    print(" city 2 is more dispersed\n")
+
+
+
+

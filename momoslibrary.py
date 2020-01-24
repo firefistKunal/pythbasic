@@ -87,4 +87,16 @@ def sampleStdDeviation(datalist):
     return (variance/(len(datalist)-1))**0.5
 
 
+def standardDeviation2D(x_values, y_values):
+    x_mean=sum(x_values)/len(x_values)
+    y_mean=sum(y_values)/len(y_values)
+    variance_x=variance_y=0
+    for x in x_values:
+        
+        variance_x =variance_x+(x-x_mean)**2
+
+    for y in y_values:
+        variance_y =variance_y+(y-y_mean)**2
+
+    return ((variance_y + variance_x)/len(x_values))**0.5
 
