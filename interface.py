@@ -3,23 +3,18 @@ import momoslibrary as momo # import the file that contains our functions, indiv
 # Code for the program to take neccessary  inputs from the user
 
 
-input_x = input("Enter the data numbers separated by space: ")
-data_x = list(map(int, input_x.split()))
+data_x = list(map(int, input("Enter the X separated by space: ").split()))
+data_y = list(map(int, input("Enter the Y separated by space: ").split()))
 
-input_y = input("Enter the data numbers separated by space: ")
-data_y = list(map(int, input_y.split()))
 city1= momo.standardDeviation2D(data_x, data_y)
 
+# data_x = list(map(int, input("Enter the X separated by space: ").split()))
+# data_y = list(map(int, input("Enter the Y separated by space: ").split()))
 
-input_x = input("Enter the data numbers separated by space: ")
-data_x = list(map(int, input_x.split()))
-input_y = input("Enter the data numbers separated by space: ")
-data_y = list(map(int, input_y.split()))
+data_x = list(int(x) for x in input("Enter the X separated by space: ").split())
+data_y = list(int (y) for y in input("Enter the Y separated by space: ").split())
 
 city2= momo.standardDeviation2D(data_x, data_y)
-
-
-
 
 if city1>city2:
     print("city 1 is more dispersed\n")
