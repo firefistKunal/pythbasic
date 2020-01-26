@@ -100,3 +100,9 @@ def standardDeviation2D(x_values, y_values):
 
     return ((variance_y + variance_x)/len(x_values))**0.5
 
+
+def sumAndSqSum(list_x, list_y):
+
+    result={'sum_x':sum(list_x), 'sum_y':sum(list_y), 'sum_xy':sum(x*y for x, y in zip(list_x, list_y)), 'sum_x_sq':sum(x**2 for x in list_x), 'sum_y_sq':sum(y**2 for y in list_y)}
+    return result
+
