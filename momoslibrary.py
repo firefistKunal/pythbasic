@@ -100,3 +100,13 @@ def standardDeviation2D(x_values, y_values):
 
     return ((variance_y + variance_x)/len(x_values))**0.5
 
+
+def dataInput():
+    dict={}
+    while int(input("Add a city?\n0.No\n1.Yes\n"))!=0:
+        key=input("city name\n")
+        # dict[key+"_x"]=list(int(x) for x in input("Enter the X for "+key+" separated by space: ").split())
+        # dict[key+"_y"]=list(int(y) for y in input("Enter the Y for " +key+" separated by space: ").split())
+        dict[key]=list(int(x) for x in input("Enter the X for "+key+" separated by space: ").split()), list(int(y) for y in input("Enter the Y for " +key+" separated by space: ").split())
+    return dict
+    
