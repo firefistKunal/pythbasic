@@ -110,3 +110,8 @@ def dataInput():
         dict[key]=list(int(x) for x in input("Enter the X for "+key+" separated by space: ").split()), list(int(y) for y in input("Enter the Y for " +key+" separated by space: ").split())
     return dict
     
+def sumAndSqSum(list_x, list_y):
+
+    result={'sum_x':sum(list_x), 'sum_y':sum(list_y), 'sum_xy':sum(x*y for x, y in zip(list_x, list_y)), 'sum_x_sq':sum(x**2 for x in list_x), 'sum_y_sq':sum(y**2 for y in list_y)}
+    return result
+
