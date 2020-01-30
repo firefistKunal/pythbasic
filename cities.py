@@ -1,11 +1,11 @@
 m = int(input('number of rows, m = '))
 n = int(input('number of columns, n = '))
 mat=[]
-for i in range(0,m):
+for i in range(m):
     mat.append([])
 print(mat)
-for i in range(0,m):
-    for j in range(0,n):
+for i in range(m):
+    for j in range(n):
         mat[i].append(j)
         mat[i][j]=0
 print(mat)
