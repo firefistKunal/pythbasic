@@ -126,3 +126,10 @@ def sumAndSqSum(list_x, list_y):
     result={'sum_x':sum(list_x), 'sum_y':sum(list_y), 'sum_xy':sum(x*y for x, y in zip(list_x, list_y)), 'sum_x_sq':sum(x**2 for x in list_x), 'sum_y_sq':sum(y**2 for y in list_y)}
     return result
 
+def guestInput():
+    list=[]
+    list.append(input("Enter guest name "))
+    list.append(input("Enter age "))
+    list.append(input("Enter Phone number "))
+    return list
+
