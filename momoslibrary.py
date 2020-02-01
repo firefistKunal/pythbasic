@@ -1,5 +1,6 @@
 import math
 import cmath
+import csv
 
 
 
@@ -131,5 +132,11 @@ def guestInput():
     list.append(input("Enter guest name "))
     list.append(input("Enter age "))
     list.append(input("Enter Phone number "))
-    return list
 
+    with open('guestlist.csv', mode='a') as file:
+        writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        writer.writerow(list)
+
+
+
+    return 0
