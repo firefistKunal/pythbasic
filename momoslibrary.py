@@ -139,13 +139,14 @@ def guestInput():
 
     return 0
 
-def csvList():
-    with open('guestlist.csv', mode='r') as file:
+def csvListTranspose(filename):
+    
+    with open('%s.csv' % filename, mode='r') as file:
         reader=csv.reader(file)
         guests=list(reader)
 
         names=list(map(list, zip(*guests)))
-        print(names[0])
+        
 
-        return 0
+        return names
 
