@@ -1,6 +1,8 @@
 import math
 import cmath
 import csv
+import panda 
+
 
 
 
@@ -110,14 +112,18 @@ def dataInput():
         # dict[key+"_y"]=list(int(y) for y in input("Enter the Y for " +key+" separated by space: ").split())
         dict[key]=list(int(x) for x in input("Enter the X for "+key+" separated by space: ").split()), list(int(y) for y in input("Enter the Y for " +key+" separated by space: ").split())
     return dict
+    #the dictionary created and returned here is in the format {'cityname':[x cordinates],[y coordinates],
+    #                                                           'cityname':[x cordinates],[y coordinates]}
+
 
 def citySprawl():
-    data=dataInput()
+    data=panda.cityDataSet()
     max=0
-    for city, value in data.items():
-    # result.append(momo.standardDeviation2D(city[0], city[1]))
-        dispersion=standardDeviation2D(value[0], value[1])
-        if dispersion>max:
+
+    for city, value in data.items():    #this loops through the keys which each city, one by one and the value[0] and value[1] are x and y coordinate list respectively
+
+        dispersion=standardDeviation2D(value[0], value[1]) #the value[0] and value[1] are x and y coordinate list respectively
+        if dispersion>max: #as loop iterates this compares the dispersion and stores the city with higher dispersion
             max=dispersion
             ans=city
     print(ans+" Is the most spread out city based upon the dispersion of the coordinates of the houses.")
