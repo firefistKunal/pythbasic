@@ -117,7 +117,7 @@ def dataInput():
 
 
 def citySprawl():
-    data=panda.cityDataSet()
+    data=dataInput()
     max=0
 
     for city, value in data.items():    #this loops through the keys which each city, one by one and the value[0] and value[1] are x and y coordinate list respectively
