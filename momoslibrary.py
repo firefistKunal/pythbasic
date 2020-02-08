@@ -135,11 +135,12 @@ def sumAndSqSum(list_x, list_y):
 
 def guestInput():
     list=[]
-    list.append(input("Enter guest name "))
-    list.append(input("Enter age "))
-    list.append(input("Enter Phone number "))
+    
 
-    with open('guestlist.csv', mode='a') as file:
+    with open('guestlist.csv', 'a', newline='') as file:
+        list.append(input("Enter guest name "))
+        list.append(input("Enter age "))
+        list.append(input("Enter Phone number "))
         writer = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         writer.writerow(list)
 
@@ -147,7 +148,7 @@ def guestInput():
 
 def csvListTranspose(filename):
     
-    with open('%s.csv' % filename, mode='r') as file:
+    with open('%s.csv' % filename, newline='') as file:
         reader=csv.reader(file)
         guests=list(reader)
 
@@ -156,3 +157,6 @@ def csvListTranspose(filename):
 
         return names
 
+def strToInt(str_list): #function to conver list datatype from string to integers, pass list with strings, as argument and returns same list with integers
+        int_list = list(int(x) for x in str_list)
+        return int_list

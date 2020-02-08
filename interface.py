@@ -4,7 +4,11 @@ import momoslibrary as momo # import the file that contains our functions, indiv
 
 
 
-momo.citySprawl()
+transpose_data=momo.csvListTranspose('guestlist')
+
+age=momo.strToInt(transpose_data[1])
+
+print(sum(age)/len(age))
 
 
 

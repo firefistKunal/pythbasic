@@ -20,7 +20,7 @@ result = zip(names,ages,phonenum)
 result_set = set(result)
 final1=sorted(result_set)
 
-file1 = open(r"C:\Users\madhura.anand\Documents\myfile.txt","w") 
+file1 = open(r"myfile.txt","w") 
 
 
 for i in range(len(final1)):
@@ -36,7 +36,7 @@ for i in range(len(final1)):
 #file1.writelines(final1) 
 file1.close() #to change file access modes 
   
-file1 = open(r"C:\Users\madhura.anand\Documents\myfile.txt","r") 
+file1 = open(r"myfile.txt","r") 
 print(file1.read())
 
 
