@@ -13,7 +13,7 @@ y1=int(y1)
 y2=int(y2)
 y3=int(y3)
 
-plt.plot([x1,x2,x3],[y1,y2,y3],'ro')
+plt.plot([x1,x2,x3],[y1,y2,y3],'ro-')
 plt.ylabel('Y AXIS')
 plt.xlabel('X AXIS')
 plt.show()

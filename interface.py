@@ -3,7 +3,6 @@ import momoslibrary as momo # import the file that contains our functions, indiv
 # Code for the program to take neccessary  inputs from the user
 
 
-
 transpose_data=momo.csvListTranspose('guestlist')
 
 age=momo.strToInt(transpose_data[1])

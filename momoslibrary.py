@@ -1,7 +1,8 @@
 import math
 import cmath
 import csv
-import panda 
+import panda
+import matplotlib.pyplot as plt
 
 
 
@@ -117,16 +118,23 @@ def dataInput():
 
 
 def citySprawl():
-    data=dataInput()
+    data=panda.cityDataSet()
     max=0
-
+    cities=[]
     for city, value in data.items():    #this loops through the keys which each city, one by one and the value[0] and value[1] are x and y coordinate list respectively
-
+        
         dispersion=standardDeviation2D(value[0], value[1]) #the value[0] and value[1] are x and y coordinate list respectively
+        plt.scatter(value[0], value[1])
+        cities.append(city)
         if dispersion>max: #as loop iterates this compares the dispersion and stores the city with higher dispersion
             max=dispersion
             ans=city
+    
     print(ans+" Is the most spread out city based upon the dispersion of the coordinates of the houses.")
+    plt.legend(cities)
+    plt.xlabel('X axis')
+    plt.ylabel('Y axis')
+    plt.show()
     
 def sumAndSqSum(list_x, list_y):
 
