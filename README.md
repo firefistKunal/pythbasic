@@ -8,4 +8,7 @@ HOW TO USE:
 Core codes are written as function in the "momoslibrary.py" and depending on which program you are developing
 the "interface.py" can be modified to do the necessary while calling the relevant functions from the library.
 
+ALSO:
+ separate folders are created for separate set of programs for more organised look.
+
 Happy Learning!
