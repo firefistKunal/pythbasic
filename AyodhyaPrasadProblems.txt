@@ -1,0 +1,169 @@
+1) Write a program to accept five numbers and display the sum of the numbers.
+
+2) Write a program to two numbers and check if the first is divisible by second.
+
+3) Write a program to accept three numbers and display highest and lowest number.
+
+4) Write a program to generate the first 10 odd numbers and display the average of these
+numbers.
+
+5) Write a program to generate the Fibonacci series. The first two numbers should be o and 1 and
+last 89. ( 0,1,2,3,5,8,13,………,89).
+
+6) Write a program to print the product of the first 10 even numbers ( 2*4*6*……..*20) using loop.
+
+7) Write a program to accept the n th term and find out sum of first n th term using formula [ sum =
+n*(n+1)/2].
+
+8) Write a program to accept the n th term and find out sum of square of first n th term using formula [
+sum = [n*(n+1)*(n+2)/6].
+
+9) Write a program to accept the n th term and find out sum of first n th term using formula using for
+loop.
+
+10) Write a program to accept the n th term and find out sum of square of first n th term using formula
+for loop.
+
+11) Write a program to accept 10 numbers and store is a variable and find out highest number use
+while loop.
+
+12) Write a program to accept 10 numbers and store is a variable and find out lowest number use
+for loop.
+
+13) Write a program to accept 50 numbers and display the total number of odd and even numbers.
+
+14) Write a program to accept 10 numbers and store in an array and find out highest and lowest
+number in given list.
+
+15) Write a program to accept inputs from a user and displays the result, depending on whether the
+user wishes to multiply or divide the numbers provided as input. The multiply module of the
+program can multiply maximum of three numbers. The divide modules of the program should
+check that the denominator should not zero.
+
+16) Write a program to accept a number and check entered number is even or odd.
+
+17) Write a program to accept a number and display cube of entered number if it odd and square of
+entered number if it is even.
+
+18) Write a program to accept a number and display sum of digits of number.
+
+19) Write a program to accept an integer number and check entered number is prime or not.
+
+20) Write a program to print first 100 prime numbers (from 1 to 100).
+
+21) Calculate the factorial of an integer number (i.e. 5! = 1*2*3*4*5 and factorial of 0! = 1).
+
+22) Write a program to enter an integer number of three digit and print the number in reverse of
+the digit of number (without using loop).
+
+23) Write a program to enter an integer number of any digit and print the number in reverse of the
+digit of number (using loop).
+
+24) Check an integer numbers is palindrome of not.
+
+25) Calculate total amount after entering number of different types of notes in Indian currency.
+
+26) Write a program to accept the name and age of a student and then print the same.
+
+27) Write a program to accept marks of three subjects of a student and then print total number and
+average.
+
+28) Write a program to accept marks of three subjects of five student and then print total number
+and percent and also print maximum percent between these students.
+
+29) Write a program to accept a string and display reverse of characters.
+
+30) Write a program to accept a string and check it is palindrome or not.
+
+31) Write a program to accept a year and check it is leap year or not.
+
+32) Write a program to accept age of a person and validate this person is eligible for voting or not.
+
+33) Calculate the discount percent on a TV, the sales person needs to check the type of TV. If the TV
+is Black and white [B], the discount will be 5 percent of the selling price (SP). If the TV is colored
+[C], then he has to verify the size of TV screen. For 14 inches screen, discount is 8 percent of the
+SP and for 21 inches screen, he discount is 10 percent of the SP.
+
+34) Write a program to accept 10 numbers and store in an array and display in reverse order.
+
+35) Write a program to accept 10 numbers and store in an array and display all the numbers is
+ascending order.
+
+36) Write a program to accept 10 numbers and store in an array and display all the numbers is
+descending order.
+
+37) Write a program to accept a number and then find out whether or not the number is divisible
+by 5.
+
+38) Write a program to accept a number and then display its 10 multiples.
+
+39) Write an error checking program. Candidates have to enter their age. The age cannot be
+negative. If a negative age is entered, an error message has to be displayed, otherwise the age
+is displayed.
+
+40) Write a program to enter a number from 1 to 7 and display the corresponding day of the week
+(Hint: 1 = Sunday).
+
+41) Write a program to enter a number from 1 to 12 and display the corresponding month of the
+year (Hint: 1 = January).
+
+42) Write a program to display following Menu.
+
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+5. Exit
+
+Then accept any number which is given above menu, and also input two umbers. Then perform
+the operation according to given in menu until user input exit menu number using while loop.
+
+
+43) Write a program to display following Menu.
+
+1. Circle
+2. Rectangle
+3. Triangle
+4. Square
+
+Then accept any number which is given above menu, then perform the operation according to
+given in menu.
+
+44) Write program to accept the radius and calculate the area of a circle using the formula. Area of
+circle = pi*r*2, pi = 22/7 r is the radius of the circle.
+
+45) Write a program to accept the temperature and its unit of measurement (Celsius (C ) or
+Fahrenheit ( F ) ) and convert to the other unit. Fahrenheit value = ((Celsius value*9)/5) + 32 and
+Celsius value = (Fahrenheit value- 32)*(5/9).
+
+46) Write a program of a class, A class has 10 students. Each student has appeared in 5 exams. Each
+exam is out of 100 marks. Calculate and display the average of marks of each student. Also
+calculate and display class average of the class.
+
+47) Display the pattern which is given bellow.
+1
+12
+123
+1234
+12345
+
+48) Display the pattern which is given bellow.
+A
+AB
+ABC
+ABCD
+ABCDE
+
+49) Display the pattern which is given bellow.
+123454321
+1234 4321
+123   321
+12     21
+1       1
+
+50) Display the pattern which is given bellow.
+ABCDEDCBA
+ABCD DCBA
+ABC   CBA
+AB     BA
+A       A
