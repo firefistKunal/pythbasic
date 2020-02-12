@@ -5,23 +5,27 @@ count=0
 with open(r"C:\Users\madhura.anand\Documents\guestsss.csv",'r') as f:
     data = csv.reader(f)
     for row in data:
-        #print(row)
+        print(row)
         count += 1
         for i in row:
+            if(len(i)<=2 and i.isnumeric()):
+                 sum=sum+int(i)
+           
+
             #print(i)
             if(i.isalpha()==True):
-                print(i)
+                print("name is ",i)
             if(len(i)>2 and i.isnumeric()):
-                print(i)
+                print("phone num is",i)
 
-            if(len(i)<=2 and i.isnumeric()):
-                sum=sum+int(i)
+        
+                
 
                        
 # print(sum)
 # print(count)
 avg=sum/count
-print("avg age is",avg)
+print("avg age of all ppl is",avg)
 
         
 
