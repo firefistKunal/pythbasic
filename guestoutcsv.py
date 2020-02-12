@@ -2,7 +2,7 @@ import csv
 sum=0
 count=0
 
-with open(r"guestsss.csv",'r') as f:
+with open(r"C:\Users\madhura.anand\Documents\guestsss.csv",'r') as f:
     data = csv.reader(f)
     for row in data:
         #print(row)
@@ -14,7 +14,7 @@ with open(r"guestsss.csv",'r') as f:
             if(len(i)>2 and i.isnumeric()):
                 print(i)
 
-            if(len(i)==2 and i.isnumeric()):
+            if(len(i)<=2 and i.isnumeric()):
                 sum=sum+int(i)
 
                        
@@ -25,6 +25,3 @@ print("avg age is",avg)
 
         
 
-# with open("out.csv", "w", newline="") as f:
-#     writer = csv.writer(f)
-#     writer.writerows(final1)
