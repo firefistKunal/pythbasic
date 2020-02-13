@@ -5,6 +5,6 @@ print(list1)
 sortedarray=np.argsort(list1)
 print(sortedarray)
 # s=slice(-1,-6,-1)
-print(sortedarray[slice(-1,-6,-1)],list1[sortedarray[slice(-1,-6,-1)]])  
+print(np.argsort(list1)[-1:-6],list1[np.argsort(list1)[-1:-6]])  
 
 
