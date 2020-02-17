@@ -2,7 +2,7 @@ import csv
 import statistics 
 import math
 
-with open(r'C:\Users\madhura.anand\Documents\si.csv','rt')as f:
+with open(r'si.csv','rt')as f:
   data = csv.reader(f)
   er=[]
   ir=[]
