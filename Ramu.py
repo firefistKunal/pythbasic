@@ -5,6 +5,14 @@ def exercise1():
     print (sum)
     return 0
 
-    
-exercise1()
+def exercise2():
+    dividend=int(input("What's the dividend? "))
+    divisor = int(input("What's the divisor? "))
+    if dividend%divisor==0:
+        print("Oh yeah!!!")
+    else:
+        print("Not quite!!")
+    return 0
+
+exercise2()
 
