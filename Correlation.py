@@ -2,7 +2,8 @@ import pandas as pd
 from scipy.stats.stats import pearsonr
 import matplotlib.pyplot as plt
 
-data=pd.read_csv('StudentIntelligence.csv')
+data=pd.read_csv('Si.csv')
+print(data['IR'])
 print(pearsonr(data['IR'], data['ER']))
 
 #To Visualize
