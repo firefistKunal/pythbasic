@@ -35,6 +35,12 @@ def exercise4():
 
     return 0
 
+def exercise5():
+    fibonacci_series=[0,1]
+    while fibonacci_series[-1]!=89:
+        fibonacci_series.append(fibonacci_series[-1]+fibonacci_series[-2])
+    print(fibonacci_series)
 
-exercise4()
+
+exercise5()
 
