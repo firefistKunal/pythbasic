@@ -41,6 +41,21 @@ def exercise5():
         fibonacci_series.append(fibonacci_series[-1]+fibonacci_series[-2])
     print(fibonacci_series)
 
+    return 0
 
-exercise5()
+def exercise6():
+
+    count=20
+    number=1
+    list=1
+    while count:
+        number+=1
+        if number%2==0:
+            list=list*number
+        count-=1
+    print(list)        
+
+    return 0
+
+exercise6()
 
