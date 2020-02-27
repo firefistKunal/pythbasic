@@ -6,7 +6,7 @@ for i in range(n*m):
     l1.append(int(input("enter the values of matrix1")))
 for j in range(n*m):
     l2.append(int(input("enter values of matrix2")))
-# arr1=np.asarray(l1)
+# arr1=np.asarray(l1)   y it no take matrix as input then whats the point in adding lists :/
 # arr2=np.asarray(l2)
 # print(arr1)
 # print(arr2)
