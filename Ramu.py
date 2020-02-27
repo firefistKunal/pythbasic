@@ -57,5 +57,9 @@ def exercise6():
 
     return 0
 
-exercise6()
+def exercise7():
+    n=int(input("Enter a value for N\n"))
+    print((n*(n+1))/2)
+
+exercise7()
 
