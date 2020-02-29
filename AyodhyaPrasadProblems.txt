@@ -18,13 +18,12 @@ n*(n+1)/2].
 8) Write a program to accept the n th term and find out sum of square of first n th term using formula [
 sum = [n*(n+1)*(n+2)/6].
 
-9) Write a program to accept the n th term and find out sum of first n th term using formula using for
+9) Write a program to accept the n th term and find out sum of first n th term using for
 loop.
 
-10) Write a program to accept the n th term and find out sum of square of first n th term using formula
-for loop.
+10) Write a program to accept the n th term and find out sum of square of first n th term using for loop.
 
-11) Write a program to accept 10 numbers and store is a variable and find out highest number use
+11) Write a program to accept 10 numbers and store it in variable and find out highest number use
 while loop.
 
 12) Write a program to accept 10 numbers and store is a variable and find out lowest number use
