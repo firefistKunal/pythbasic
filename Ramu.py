@@ -60,6 +60,14 @@ def exercise6():
 def exercise7():
     n=int(input("Enter a value for N\n"))
     print((n*(n+1))/2)
+    
+    return 0
+def exercise8():
 
-exercise7()
+    n=int(input("Enter a value for N\n"))
+    print((n*(n+1)*(n+2)/6))
+
+    return 0
+
+exercise8()
 
