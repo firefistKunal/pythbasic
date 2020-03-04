@@ -69,5 +69,14 @@ def exercise8():
 
     return 0
 
-exercise8()
+def exercise12():
+    list_of_numbers=[]
+    for iteration in range(1, 11):
+        list_of_numbers.append(int(input("\nEnter the {} number    ".format(iteration))))
+    print("\nYou entered the list\n{}".format(list_of_numbers))
+
+    list_of_numbers.sort()
+    print("Largest number you entered is {}".format(list_of_numbers[-1]))
+
+exercise12()
 

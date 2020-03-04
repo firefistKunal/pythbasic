@@ -26,7 +26,7 @@ loop.
 11) Write a program to accept 10 numbers and store it in variable and find out highest number use
 while loop.
 
-12) Write a program to accept 10 numbers and store is a variable and find out lowest number use
+12) Write a program to accept 10 numbers and store it in a list and find out lowest number use
 for loop.
 
 13) Write a program to accept 50 numbers and display the total number of odd and even numbers.
